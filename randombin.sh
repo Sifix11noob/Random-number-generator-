@@ -14,7 +14,7 @@ while true; do
             echo "Generating $num_passwords random passwords starting from $choice:"
             for ((i=1; i<=$num_passwords; i++)); do
                 password="$choice"
-                for ((j=1; j<12; j++)); do
+                for ((j=1; j<5; j++)); do
                     password+=$((RANDOM % 10))
                 done
                 echo "Password $i: $password"
